@@ -4,7 +4,6 @@ import {
   CardImg,
   CardText,
   CardBody,
-  CardTitle,
   Breadcrumb,
   BreadcrumbItem,
 } from "reactstrap";
@@ -62,6 +61,8 @@ function CampsiteInfo(props) {
             <h2>{props.campsite.name}</h2>
             <hr />
           </div>
+        </div>
+        <div className="row">
           <RenderCampsite campsite={props.campsite} />
           <RenderComments comments={props.comments} />
         </div>
