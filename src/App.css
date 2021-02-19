@@ -49,17 +49,23 @@ h2 {
 }
 
 .page-enter {
-  opacity: 0;
-  transform: translateX(-100%);
+  opacity: 1;  
+  transform: rotateZ(90deg);
 }
 
 .page-enter-active {
   opacity: 1;
+  transform: rotateZ(0deg);
+  transition: 300ms linear;
+}
+
+.page-exit {
+  opacity: 1;
   transform: translateX(0%);
-  transition: 300ms ease-out;
 }
 
 .page-exit-active {
-  opacity: 0;
-  transition: 300ms ease-in;
+  opacity: 1;
+  transform: translateX(100%);
+  transition: 300ms linear;
 }
